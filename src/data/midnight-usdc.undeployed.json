@@ -1,0 +1,13 @@
+{
+  "network": "undeployed",
+  "address": "ec34a1a550c7730f200a41846b88ffc6958abc827f3f30a34ce5cb60c1033888",
+  "deployTxHash": "00eaa8f6ba9c7a03a7608f4df5eab985ad0d0ffc321695d4b74dfa19668c6c42c4",
+  "privateStateId": "musdc:undeployed",
+  "privateStateStore": "musdc-priv",
+  "merchantPk": "d610a3a1bde25a5969600d60a100231841f74d550deefc07cc6a3dbef91cb994",
+  "buyerPk": "65e1402092a837305c5634f64328542fdecbdcdc40139704b512866b1fa85a09",
+  "asset": "mUSDC",
+  "decimals": 6,
+  "faucetCapMicroUsdc": 10000000,
+  "deployedAt": "2026-07-24T21:13:26.603Z"
+}

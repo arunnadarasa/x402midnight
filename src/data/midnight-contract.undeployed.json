@@ -1,0 +1,9 @@
+{
+  "network": "undeployed",
+  "address": "71fcea6fdb275d4cee3cc3f492756efed6c0d05d26444fe2cb4e407613b73717",
+  "deployTxHash": "007eff5349d60b38c8d0a6c1de76fba5f59487d3044d35202c0b7c435424158553",
+  "privateStateId": "scip:undeployed",
+  "privateStateStore": "scip-priv",
+  "buyerPk": "eb207761fd58d96795858fd4e06c07f125d8fa314880035c6b3f85611e6f31da",
+  "deployedAt": "2026-07-24T20:54:38.645Z"
+}

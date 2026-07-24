@@ -1,0 +1,32 @@
+// StreamingChoreographyIP.compact
+// Persona: on-demand dance-choreography transcription API.
+// Each chunk of the stream is a separate x402 challenge settled on Midnight.
+// Ledger stores an ordered list of chunk anchors (buyerPk, chunkHash, priceMicroUsdc)
+// so the stream is auditable end-to-end.
+pragma language_version 0.23;
+
+import CompactStandardLibrary;
+
+// Public ledger: append-only chunk log
+export ledger chunks: List<Bytes<32>>;                 // chunkHash sequence (newest first)
+export ledger buyers: List<ZswapCoinPublicKey>;        // buyer PK per chunk
+export ledger prices: List<Uint<64>>;                  // microUSDC per chunk
+// Counter.increment only accepts Uint<16>; money totals need a Uint<64> cell.
+export ledger totalMicroUsdc: Uint<64>;
+
+// Private-by-default witness: buyer's local secret
+witness localSecretKey(): Bytes<32>;
+
+// Anchor one x402-settled chunk. All params private; only pk + hash + price disclosed.
+export circuit anchorChunk(chunkHash: Bytes<32>, priceMicroUsdc: Uint<64>): [] {
+  const sk = localSecretKey();
+  const pk = ZswapCoinPublicKey {
+    bytes: persistentHash<Vector<2, Bytes<32>>>([pad(32, "scip:buyer:v1"), sk])
+  };
+  // Compact List only supports pushFront (newest-first); there is no pushBack.
+  chunks.pushFront(disclose(chunkHash));
+  buyers.pushFront(disclose(pk));
+  prices.pushFront(disclose(priceMicroUsdc));
+  // Uint addition widens the static type; cast back to Uint<64> for the cell write.
+  totalMicroUsdc = disclose((totalMicroUsdc + priceMicroUsdc) as Uint<64>);
+}

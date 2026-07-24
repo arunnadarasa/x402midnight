@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../",
+  "sources": ["StreamingChoreographyIP.compact", "compiler/standard-library.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAKA;;;;;;;;;;;;;MAeA,AAAA,WAWC;;;;;cAX0B,WAAoB;cAAE,gBAAwB;;;;;;;;;;;;;;;;;;;;;;;;;yCAA9C,WAAoB,+BAAE,gBAAwB;;;;;;;;;6CAA9C,WAAoB;6CAAE,gBAAwB;;;OAWxE;;;;GACA;EA3BD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAKA;;;;;;;;;;;yEAAsC;IACtC;;;;;;;;;;;yEAA+C;IAC/C;;;;;;;;;;;yEAAqC;IAErC;;;;;;;;;yEAAuC;;;;;;;GAkBtC;EChCD,AAAA,kBAAA;oEAAA;;;EDiBA,AAAA,iBAAoC;;0DAApC,cAAoC;;;;;;;;;;;;;;GAAA;EAGpC,AAAA,cAWC,4BAX0B,WAAoB,EAAE,gBAAwB;UACjE,IAAqB;UACrB,IAEL;;6CADwE,IAAE;IAG3E;;;;;;;;;;;;;;;;;;;wIAA0B,WAAS;;;;;;;;;;;;;;wEAA7B;IACN;;;;;;;;;;;;;;;;;;;wIAA0B,IAAE;;;;;;;;;;;;;;wEAAtB;IACN;;;;;;;;;;;;;;;;;;;wIAA0B,gBAAc;;;;;;;;;;;;;;wEAAlC;UAEN,KAAc;;;;;6CAAa;;;;;;;;;;;kHAAc;;qBAAG,gBAAc;IAA1D;;;;;;;2HAAA,KAAc;;yEAAA;;GACf;;;;;;;;;;;;;;;;IArBD;;;;;uCAAA;;;;;;;;;;;;;;;;;;;;;;4GAAsC;;;;;;uCAAtC;;;;;;;;;;;;;;;;;4GAAsC;;;;;;uCAAtC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4GAAsC;;;;;;;;;KAAA;IACtC;;;;;uCAAA;;;;;;;;;;;;;;;;;;;;;;4GAA+C;;;;;;uCAA/C;;;;;;;;;;;;;;;;;4GAA+C;;;;;;wCAA/C;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6GAA+C;;;;;;;;;KAAA;IAC/C;;;;;uCAAA;;;;;;;;;;;;;;;;;;;;;;4GAAqC;;;;;;uCAArC;;;;;;;;;;;;;;;;;4GAAqC;;;;;;uCAArC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4GAAqC;;;;;;;;;KAAA;IAErC;qCAAA;;;;;;;;;;;0GAAuC;KAAA;;;;;;;;;;"
+}
